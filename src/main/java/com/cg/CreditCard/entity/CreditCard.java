@@ -2,8 +2,16 @@ package com.cg.CreditCard.entity;
 
 import java.time.LocalDate;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+
+@Entity
 public class CreditCard {
-	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 	private String bankName;
 	private String cardType;
@@ -11,6 +19,7 @@ public class CreditCard {
 	private String cardNumber;
     private LocalDate Expirydate;
     private int cvv;
+    
 	public CreditCard(long id, String bankName, String cardType, String cardName, String cardNumber,
 			LocalDate expirydate, int cvv) {
 		super();
@@ -22,6 +31,7 @@ public class CreditCard {
 		Expirydate = expirydate;
 		this.cvv = cvv;
 	}
+	
 	public long getId() {
 		return id;
 	}

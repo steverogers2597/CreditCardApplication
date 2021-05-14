@@ -2,8 +2,15 @@ package com.cg.CreditCard.entity;
 
 import java.time.LocalDate;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+
+@Entity
 public class Customer {
-	
+	@Id
 	private String userId;
 	private String name;
 	private String email;

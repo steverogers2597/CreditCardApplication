@@ -1,5 +1,10 @@
 package com.cg.CreditCard.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Address")
 public class Address {
 	
 	private String doorNo;

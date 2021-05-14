@@ -1,5 +1,8 @@
 package com.cg.CreditCard.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class AddressDTO {
 	
 	private String doorNo;

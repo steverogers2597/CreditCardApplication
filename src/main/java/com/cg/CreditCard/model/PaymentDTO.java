@@ -1,13 +1,11 @@
 package com.cg.CreditCard.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class PaymentDTO {
 	
-	@Override
-	public String toString() {
-		return "PaymentDTO [paymentId=" + paymentId + ", method=" + method + ", amountDue=" + amountDue + "]";
-	}
-
-
+	
 	private long paymentId;
 	private String method;
 	private double amountDue;
@@ -39,6 +37,9 @@ public class PaymentDTO {
 		this.amountDue = amountDue;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "PaymentDTO [paymentId=" + paymentId + ", method=" + method + ", amountDue=" + amountDue + "]";
+	}
 	
 }

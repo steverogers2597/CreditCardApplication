@@ -2,6 +2,9 @@ package com.cg.CreditCard.model;
 
 import java.time.LocalDate;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class TransactionDTO {
 	
 	private long tranId;

@@ -2,13 +2,12 @@ package com.cg.CreditCard.model;
 
 import java.time.LocalDate;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class CustomerDTO {
 	
-	@Override
-	public String toString() {
-		return "CustomerDTO [userId=" + userId + ", name=" + name + ", email=" + email + ", contactNo=" + contactNo
-				+ ", dob=" + dob + ", address=" + address + "]";
-	}
+	
 
 	private String userId;
 	private String name;
@@ -63,7 +62,11 @@ public class CustomerDTO {
 		this.dob = dob;
 		this.address = address;
 	}
-	
+	@Override
+	public String toString() {
+		return "CustomerDTO [userId=" + userId + ", name=" + name + ", email=" + email + ", contactNo=" + contactNo
+				+ ", dob=" + dob + ", address=" + address + "]";
+	}
 	
 	
 

@@ -2,13 +2,12 @@ package com.cg.CreditCard.model;
 
 import java.time.LocalDate;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class StatementDTO {
 	
-	@Override
-	public String toString() {
-		return "StatementDTO [statementId=" + statementId + ", dueAmount=" + dueAmount + ", billingDate=" + billingDate
-				+ ", dueDate=" + dueDate + ", customer=" + customer + "]";
-	}
+	
 	private long statementId;
 	private double dueAmount;
 	private LocalDate billingDate;
@@ -54,7 +53,11 @@ public class StatementDTO {
 		this.dueDate = dueDate;
 		this.customer = customer;
 	}
-	
+	@Override
+	public String toString() {
+		return "StatementDTO [statementId=" + statementId + ", dueAmount=" + dueAmount + ", billingDate=" + billingDate
+				+ ", dueDate=" + dueDate + ", customer=" + customer + "]";
+	}
 	
 	
 	
